@@ -1,4 +1,4 @@
-# **End to end/Behavioral Cloning driving** 
+# **End to end/Behavioral Cloning deep learning** 
 
 
  The aim of this project is to create an end to end CNN to drive a Car in a simulated environment. As a quick example of the final outcome of the deep neural network driving the car find two examples of its performance below:
