@@ -5,8 +5,8 @@
 
  
 <div class="wrap">
-    <img src="D:\Online Courses\Udacity\Self Driving Cars\CarND-Behavioral_Cloning-Project\figures\track1.gif"  />
-    <img src="D:\Online Courses\Udacity\Self Driving Cars\CarND-Behavioral_Cloning-Project\figures\track2.gif" style="width: 50%;/>
+    <img src=".\figures\track1.gif"  />
+    <img src=".\figures\track2.gif" style="width: 50%;/>
     <br clear="all" />
 </div>
 
@@ -29,7 +29,7 @@ The steps of this project were as follows:
 ```
 python drive.py model.h5 <dir_where_images_will_be_stored>
 ```
-* `model.h5` containing a trained convolution neural network. 
+* `model.h5` containing the trained convolution neural network. 
 * `video.py` containing the script to create the video based on the frames taken from the front camera obtained by the output of `drive.py`. To create a video based on images you should do:
 ```
 python video.py <dir_where_images_have_been_stored>
@@ -103,7 +103,7 @@ Finally I performed the same filter to all recordings. i.e. to the 2 track manua
 However, since in each of the samples, as explained above, there was data from 3 cameras. I ended up with a final number of `30375` samples. Nevertheless, to incorporate all the camera information I had to do a little modification, as shown below:
 
 <p align="center">
-<img src="D:\Online Courses\Udacity\Self Driving Cars\CarND-Behavioral_Cloning-Project\figures\figure1.JPG" height="500"/>
+<img src=".\figures\figure1.JPG" height="500"/>
 </p>
 
 As shown above I have only one steering measurement. The reason is that we only need one and the other ones can be calculated based on trigonometry. However, in this exercise I was a little lazy and just pick a random correction factor and tune it with a trial and error process. The best correction factor I found so far is `correction_factor = 0.2`
@@ -117,7 +117,7 @@ That means that:
 A Convolutional Neural Network CNN model architecture was used in this project to learn from the camera images. The architecture was inspired on the [Nvidea End-to-End Deep learning model](https://devblogs.nvidia.com/deep-learning-self-driving-cars/). The overall architecture from Nvidea is as follows: 
 
 <p align="center">
-<img src="D:\Online Courses\Udacity\Self Driving Cars\CarND-Behavioral_Cloning-Project\figures\figure6.JPG" height="500"/>
+<img src=".\figures\figure6.JPG" height="500"/>
 </p>
 
 ### 1. Model architecture 
@@ -125,7 +125,7 @@ A Convolutional Neural Network CNN model architecture was used in this project t
 My final model architecture was as follows:
 
  <p align="center">
-<img src="D:\Online Courses\Udacity\Self Driving Cars\CarND-Behavioral_Cloning-Project\figures\figure7.JPG" height="500"/>
+<img src=".\figures\figure7.JPG" height="500"/>
 </p>
 
 
@@ -151,7 +151,7 @@ The reason to perform this step was because I wanted a well conditioned data to 
 model.add(Cropping2D(cropping=((60,20), (0,0))))
 ```
 <p align="center">
-<img src="D:\Online Courses\Udacity\Self Driving Cars\CarND-Behavioral_Cloning-Project\figures\figure9.JPG" width="500"/>
+<img src=".\figures\figure9.JPG" width="500"/>
 </p>
 
 #### 3. Model parameters
