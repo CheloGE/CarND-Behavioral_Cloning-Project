@@ -98,7 +98,7 @@ Because of this problem I decided to randomly filter out some of the close to ze
 
 ![][figure4]
 
-Finally I performed the same filter to all recordings. i.e. to the 2 track manual driving forward and backward. Then I joined all of them and I got a total number of `10125` samples. 
+Finally I performed the same filter to all recordings. i.e. I filter out all images from the 2 track manual driving forward and backward recordings. Then I joined all of them and I got a total number of `10125` samples. 
 
 However, since in each of the samples, as explained above, there was data from 3 cameras. I ended up with a final number of `30375` samples. Nevertheless, to incorporate all the camera information I had to do a little modification, as shown below:
 
@@ -106,7 +106,7 @@ However, since in each of the samples, as explained above, there was data from 3
 <img src=".\figures\figure1.JPG" height="500"/>
 </p>
 
-As shown above I have only one steering measurement. The reason is that we only need one and the other ones can be calculated based on trigonometry. However, in this exercise I was a little lazy and just pick a random correction factor and tune it with a trial and error process. The best correction factor I found so far is `correction_factor = 0.2`
+As shown above I have only one steering measurement. The reason is that we only need one and the other ones can be calculated based on trigonometry. However, in this exercise, I was a little lazy and I just picked up a random correction factor and tune it with a trial and error process. The best correction factor I found so far is `correction_factor = 0.2`
 
 That means that:
 * For the `left camera` sample the steering was `steering angle + correction_factor` 
