@@ -5,8 +5,8 @@
 
  
 <div class="wrap">
-    <img src=".\figures\track1.gif" width="400/>
-    <img src=".\figures\track2.gif" width="400"/>
+    <img src=".\figures\track1.gif" width="300/>
+    <img src=".\figures\track2.gif" width="300"/>
     <br clear="all" />
 </div>
 
