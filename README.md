@@ -6,7 +6,7 @@
  
 <div class="wrap">
     <img src=".\figures\track1.gif"  />
-    <img src=".\figures\track2.gif" style="width: 50%;/>
+    <img src=".\figures\track2.gif" width="200"/>
     <br clear="all" />
 </div>
 
