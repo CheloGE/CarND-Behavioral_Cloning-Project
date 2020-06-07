@@ -39,6 +39,7 @@ python video.py <dir_where_images_have_been_stored>
 * `model.ipynb` Jupyter notebook containing all steps followed in the development of this work. In fact, `model.py` is a summary of steps that were analyzed and explained in this notebook.
 
 **Dependencies**
+
 You can download the simulator depending on your OS in the following paths:
 
 * [Linux](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Term1-Sim/term1-simulator-linux.zip) 
